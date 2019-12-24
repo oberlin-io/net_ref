@@ -1,5 +1,5 @@
 # Networking Reference
-*Linux Debian / Raspbian, otherwise noted
+*Linux Debian / Raspbian, otherwise noted*
 
 #### Get machine's MAC addresses
 
@@ -36,6 +36,10 @@ Or
 #### Get WAPs nearby into file
 
 ```sudo iwlist wlan0 scanning | egrep 'Cell|Encryption|Quality|Last beacon|ESSID' >> waps```
+
+Or
+
+```sudo iwlist wlan0 scan | grep -i ssid```
 
 #### Put up/down a link
 
