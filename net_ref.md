@@ -29,3 +29,7 @@ rfkill unblock 0
 #### Get wireless connection info
 
 ```iwlist wlan0 scan |less```
+
+#### Get WAPs nearby into file
+
+```sudo iwlist wlan0 scanning | egrep 'Cell|Encryption|Quality|Last beacon|ESSID' >> waps```
