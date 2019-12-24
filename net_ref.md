@@ -1,7 +1,7 @@
 # Networking Reference
+*Linux Debian / Raspbian, otherwise noted
 
 #### Get machine's MAC addresses
-*Linux*
 
 ```ip link``` or ```ip address```
 
@@ -10,7 +10,6 @@
 - wifi: WIFI link
 
 #### Get machine's MAC and IP addresses
-*Linux*
 
 ```ip address```
 
@@ -33,3 +32,10 @@ rfkill unblock 0
 #### Get WAPs nearby into file
 
 ```sudo iwlist wlan0 scanning | egrep 'Cell|Encryption|Quality|Last beacon|ESSID' >> waps```
+
+#### Put up/down a link
+
+```
+ip link
+sudo ip link set wlan0 up
+```
